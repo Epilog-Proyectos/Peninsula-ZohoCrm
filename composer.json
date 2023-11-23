@@ -1,0 +1,17 @@
+{
+    "name": "bitnami/develop",
+    "autoload": {
+        "psr-4": {
+            "Bitnami\\Develop\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "danielsierra34",
+            "email": "danielsierra34@gmail.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^7.0"
+    }
+}
