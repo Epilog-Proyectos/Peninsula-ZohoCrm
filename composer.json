@@ -12,6 +12,7 @@
         }
     ],
     "require": {
-        "guzzlehttp/guzzle": "^7.0"
+        "guzzlehttp/guzzle": "^7.0",
+        "mongodb/mongodb": "^1.17"
     }
 }
