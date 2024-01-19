@@ -2,9 +2,8 @@
 $server=getcwd();
 include $server ."/environment.php";
 include $server."/vendor/autoload.php";
-include $server."/mysqli.php";
-include $server."/mongo.php";
-
+include $server."/includes/mysqli.php";
+include $server."/includes/mongo.php";
 
 function getNewZohoToken(){
   $client = new GuzzleHttp\Client();
