@@ -85,7 +85,7 @@ function getValidTokenFromZoho(){
 $token=getValidTokenFromZoho();
 $module=$_GET["module"];
 
-$mongoClient->$database->$module->drop();
+$mongoClient->Descargados->$module->drop();
 $moreRecords = true;
 $items=0;
 $page=1;
@@ -94,7 +94,7 @@ while ($moreRecords) {
   $moreRecords = $response->info->more_records;
   $records = $response->data;
   $items += sizeof($records);
-  $collection=$mongoClient->$database->$module->insertMany($records);
+  $collection=$mongoClient->Descargados->$module->insertMany($records);
   $page++;
 }
 echo "Felicidades, se han descargo y almacenado <b>$items</b> registros para el módulo de <b>$module</b>";
